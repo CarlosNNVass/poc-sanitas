@@ -1,0 +1,38 @@
+{
+  "variantName": "accordion-coverage",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-05-08T11:47:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.sanitas.es/seguros/seguro-de-salud-sanitas-unico",
+    "originPage": "Insurance product landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "coverage-details",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + title + bullet list content",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product coverage/features sections",
+      "service category breakdowns",
+      "insurance plan details"
+    ],
+    "notSuitableFor": [
+      "FAQ sections with questions/answers",
+      "simple text-only accordions"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/seguros/seguro-de-salud-sanitas-unico"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-08T11:47:00.000Z"
+  }
+}

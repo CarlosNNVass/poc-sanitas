@@ -1,0 +1,68 @@
+.accordion-coverage details {
+  border: none;
+  border-bottom: 1px solid #e0ddd9;
+}
+
+.accordion-coverage details + details {
+  margin-top: 0;
+}
+
+.accordion-coverage details summary {
+  position: relative;
+  padding: 16px 48px 16px 16px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  font-size: var(--body-font-size-m);
+  color: var(--color-navy);
+  transition: background-color var(--transition-base);
+}
+
+.accordion-coverage details[open] summary {
+  background-color: transparent;
+  color: var(--color-cyan);
+}
+
+.accordion-coverage details summary:hover {
+  background-color: rgb(0 0 0 / 2%);
+}
+
+.accordion-coverage details summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-coverage details summary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%) rotate(135deg);
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--color-navy);
+  border-width: 2px 2px 0 0;
+  transition: transform var(--transition-base);
+}
+
+.accordion-coverage details[open] summary::after {
+  transform: translateY(-50%) rotate(-45deg);
+  border-color: var(--color-cyan);
+}
+
+.accordion-coverage details .accordion-coverage-item-body {
+  padding: 0 16px 16px;
+}
+
+.accordion-coverage details .accordion-coverage-item-body p {
+  margin-top: 0;
+  color: var(--text-color-muted);
+}
+
+.accordion-coverage details .accordion-coverage-item-body ul {
+  padding-left: 20px;
+  color: var(--text-color-muted);
+}
+
+.accordion-coverage details .accordion-coverage-item-body li {
+  margin-bottom: var(--spacing-sm);
+}

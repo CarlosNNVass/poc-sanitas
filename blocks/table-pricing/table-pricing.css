@@ -1,0 +1,71 @@
+.table-pricing.block {
+  width: 100%;
+  overflow-x: auto;
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--spacing-md);
+}
+
+.table-pricing.block table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: var(--body-font-size-s);
+}
+
+@media (width >= 900px) {
+  .table-pricing.block table {
+    font-size: var(--body-font-size-m);
+  }
+}
+
+.table-pricing.block table thead tr {
+  border-top: none;
+  border-bottom: 2px solid var(--color-cyan);
+}
+
+.table-pricing.block table thead th {
+  font-weight: 700;
+  color: var(--color-navy);
+  text-align: left;
+  padding: var(--spacing-md);
+}
+
+.table-pricing.block table tbody tr {
+  border-bottom: 1px solid #e8e5e1;
+}
+
+.table-pricing.block table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table-pricing.block table td {
+  padding: 12px var(--spacing-md);
+  color: var(--text-color-muted);
+  text-align: left;
+}
+
+.table-pricing.block table td:last-child {
+  text-align: right;
+  font-weight: 700;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.table-pricing.block table tfoot td {
+  font-size: var(--body-font-size-xs);
+  color: var(--text-color-muted);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid #e8e5e1;
+}
+
+.table-pricing table th p,
+.table-pricing table td p {
+  margin: 0;
+}
+
+.table-pricing table td p + p {
+  margin-top: 0.25em;
+}

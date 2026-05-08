@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-cta",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-08T11:47:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.sanitas.es/seguros/seguro-de-salud-sanitas-unico",
+    "originPage": "Insurance product landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "cta-layout",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "text + CTA button side by side",
+    "buttonCount": 2,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "side-by-side CTA panels",
+      "download + action split layouts",
+      "contact section layouts"
+    ],
+    "notSuitableFor": [
+      "image + text layouts",
+      "feature comparison columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/seguros/seguro-de-salud-sanitas-unico"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-08T11:47:00.000Z"
+  }
+}

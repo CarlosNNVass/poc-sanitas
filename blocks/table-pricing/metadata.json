@@ -1,0 +1,39 @@
+{
+  "variantName": "table-pricing",
+  "baseBlock": "table",
+  "version": "1.0.0",
+  "created": "2026-05-08T11:47:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.sanitas.es/seguros/seguro-de-salud-sanitas-unico",
+    "originPage": "Insurance product landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "pricing-table",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "header row + data rows with service/price columns",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "pricing tier tables",
+      "copayment schedule tables",
+      "feature comparison tables",
+      "contract condition tables"
+    ],
+    "notSuitableFor": [
+      "simple data listings",
+      "content that would be better as cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/seguros/seguro-de-salud-sanitas-unico"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-08T11:47:00.000Z"
+  }
+}

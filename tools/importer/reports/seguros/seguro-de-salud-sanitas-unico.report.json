@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.sanitas.es/seguros/seguro-de-salud-sanitas-unico",
+  "path": "seguros/seguro-de-salud-sanitas-unico",
+  "timestamp": "2026-05-08T12:10:00.478Z",
+  "title": "Sanitas Único - Seguro médico sin límite de edad",
+  "template": "insurance-product-page",
+  "blocks": [
+    "hero-product",
+    "accordion-coverage",
+    "cards-service",
+    "table-pricing",
+    "table-pricing",
+    "columns-cta",
+    "carousel-testimonial",
+    "accordion-faq",
+    "accordion-faq"
+  ]
+}

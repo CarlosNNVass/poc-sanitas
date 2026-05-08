@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-product",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-05-08T11:47:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.sanitas.es/seguros/seguro-de-salud-sanitas-unico",
+    "originPage": "Insurance product landing page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "product-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + subheading + price + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "insurance product pages",
+      "product landing pages with pricing",
+      "health service product pages"
+    ],
+    "notSuitableFor": [
+      "blog posts",
+      "article pages without product focus",
+      "pages without background images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/seguros/seguro-de-salud-sanitas-unico"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-08T11:47:00.000Z"
+  }
+}

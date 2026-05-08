@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-service",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-08T11:47:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.sanitas.es/seguros/seguro-de-salud-sanitas-unico",
+    "originPage": "Insurance product landing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "service-features",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + heading + description",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "service feature lists",
+      "benefit highlights with icons",
+      "product feature grids"
+    ],
+    "notSuitableFor": [
+      "image-heavy product galleries",
+      "article card grids with thumbnails"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/seguros/seguro-de-salud-sanitas-unico"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-08T11:47:00.000Z"
+  }
+}
