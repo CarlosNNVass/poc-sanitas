@@ -37,6 +37,13 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.hero-product > div:last-child > div {
+  flex: 1;
 }
 
 .hero-product h1 {
@@ -74,6 +81,37 @@
   text-decoration: none;
 }
 
+.hero-product > div:last-child > div:last-child {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.hero-product > div:last-child > div:last-child h3 {
+  color: var(--color-navy);
+  margin-top: 0;
+  font-size: var(--heading-font-size-m);
+}
+
+.hero-product > div:last-child > div:last-child p {
+  color: var(--text-color-muted);
+  max-width: unset;
+  font-size: var(--body-font-size-s);
+}
+
+.hero-product > div:last-child > div:last-child a:any-link {
+  background-color: var(--color-cyan);
+  width: 100%;
+  justify-content: center;
+}
+
+.hero-product > div:last-child > div:last-child a:hover {
+  background-color: var(--link-hover-color);
+}
+
+/* stylelint-disable no-descending-specificity */
 .hero-product > div:first-child,
 .hero-product > div:first-child > div,
 .hero-product > div:first-child picture {
@@ -93,6 +131,11 @@
   .hero-product {
     padding: 64px 32px;
     min-height: 400px;
+  }
+
+  .hero-product > div:last-child {
+    flex-direction: row;
+    align-items: center;
   }
 
   .hero-product h1 {
