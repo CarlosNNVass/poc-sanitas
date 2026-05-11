@@ -46,6 +46,10 @@
   flex: 1;
 }
 
+.hero-product:not(.has-aside) > div:last-child > div {
+  max-width: 680px;
+}
+
 .hero-product h1 {
   color: var(--color-white);
   font-size: var(--heading-font-size-l);
@@ -81,7 +85,7 @@
   text-decoration: none;
 }
 
-.hero-product > div:last-child > div:last-child {
+.hero-product.has-aside > div:last-child > div:last-child {
   background-color: var(--color-white);
   border-radius: var(--radius-md);
   padding: var(--spacing-lg);
@@ -89,25 +93,25 @@
   text-align: center;
 }
 
-.hero-product > div:last-child > div:last-child h3 {
+.hero-product.has-aside > div:last-child > div:last-child h3 {
   color: var(--color-navy);
   margin-top: 0;
   font-size: var(--heading-font-size-m);
 }
 
-.hero-product > div:last-child > div:last-child p {
+.hero-product.has-aside > div:last-child > div:last-child p {
   color: var(--text-color-muted);
   max-width: unset;
   font-size: var(--body-font-size-s);
 }
 
-.hero-product > div:last-child > div:last-child a:any-link {
+.hero-product.has-aside > div:last-child > div:last-child a:any-link {
   background-color: var(--color-cyan);
   width: 100%;
   justify-content: center;
 }
 
-.hero-product > div:last-child > div:last-child a:hover {
+.hero-product.has-aside > div:last-child > div:last-child a:hover {
   background-color: var(--link-hover-color);
 }
 
