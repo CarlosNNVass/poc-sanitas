@@ -29,18 +29,61 @@
   gap: var(--spacing-sm);
   font-weight: 700;
   font-size: var(--body-font-size-s);
-  color: var(--color-cyan);
-  border: 2px solid var(--color-cyan);
-  border-radius: var(--radius-pill);
+  color: var(--color-white);
+  background-color: var(--color-cyan);
+  border-radius: var(--radius-sm);
   padding: 10px 20px;
   text-decoration: none;
   transition: all var(--transition-base);
 }
 
 .columns-cta > div > div a:hover {
-  background-color: var(--color-cyan);
-  color: var(--color-white);
+  background-color: var(--link-hover-color);
   text-decoration: none;
+}
+
+/* Contact variant: 75/25 layout with icon grid */
+.columns-cta.contact > div > div:first-child {
+  flex: 3;
+}
+
+.columns-cta.contact > div > div:last-child {
+  flex: 1;
+  background-color: var(--color-warm-gray);
+}
+
+.columns-cta.contact > div > div:last-child a:any-link {
+  background-color: transparent;
+  color: var(--color-cyan);
+  padding: 4px 0;
+  font-weight: 400;
+  font-size: var(--body-font-size-m);
+}
+
+.columns-cta.contact > div > div:last-child a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+/* Icon items in contact grid */
+.columns-cta .icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-sm);
+}
+
+.columns-cta .icon-item .icon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-navy);
+}
+
+.columns-cta .icon-item .icon img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (width >= 900px) {
