@@ -305,8 +305,8 @@ main > .section:first-of-type {
   }
 }
 
-/* section header: default-content-wrapper as block-like element */
-main .section > .default-content-wrapper {
+/* section header: center only wrappers that contain an h2 */
+main .section > .default-content-wrapper:has(h2) {
   text-align: center;
 }
 
@@ -320,7 +320,7 @@ main .section > .default-content-wrapper h2 strong {
   color: #0652ae;
 }
 
-main .section > .default-content-wrapper > p {
+main .section > .default-content-wrapper:has(h2) > p {
   font-size: 18px;
   color: #21272a;
   line-height: 1.3;

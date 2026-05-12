@@ -1,0 +1,31 @@
+.text-body {
+  text-align: left;
+}
+
+.text-body p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #21272a;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+.text-body p:last-child {
+  margin-bottom: 0;
+}
+
+.text-body strong {
+  display: inline;
+  font-weight: 800;
+  color: #21272a;
+}
+
+.text-body a:any-link {
+  color: var(--color-cyan);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.text-body a:hover {
+  text-decoration: underline;
+}
