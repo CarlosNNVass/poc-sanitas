@@ -169,7 +169,7 @@
   text-decoration: none;
 }
 
-@media (width >= 900px) {
+@media (width >= 600px) {
   .hero-product {
     min-height: 420px;
   }
