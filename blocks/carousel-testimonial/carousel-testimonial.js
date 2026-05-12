@@ -76,6 +76,28 @@ function createSlide(row, slideIndex, carouselId) {
 
   row.querySelectorAll(':scope > div').forEach((column, colIdx) => {
     column.classList.add(`carousel-testimonial-slide-${colIdx === 0 ? 'image' : 'content'}`);
+
+    if (colIdx === 1) {
+      const firstP = column.querySelector('p');
+      if (firstP) {
+        const strong = firstP.querySelector('strong');
+        const name = strong?.textContent?.trim() || '';
+        const fullText = firstP.textContent || '';
+        const dateMatch = fullText.match(/(\d{1,2}\/\d{1,2}\/\d{4})/);
+        const date = dateMatch ? dateMatch[1] : '';
+
+        const header = document.createElement('div');
+        header.className = 'testimonial-header';
+        header.innerHTML = `<span class="testimonial-name">${name}</span><span class="testimonial-date">${date}</span>`;
+
+        const stars = document.createElement('div');
+        stars.className = 'testimonial-stars';
+        stars.innerHTML = '★★★★★';
+
+        firstP.replaceWith(header, stars);
+      }
+    }
+
     slide.append(column);
   });
 
