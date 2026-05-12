@@ -1,0 +1,67 @@
+.cards-faq-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.cards-faq-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: box-shadow var(--transition-base);
+}
+
+.cards-faq-card:hover {
+  box-shadow: 0 0 8px rgb(0 0 0 / 20%);
+}
+
+.cards-faq-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-faq-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-cyan);
+  margin: 0;
+}
+
+.cards-faq-card-plus {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--color-cyan);
+  line-height: 1;
+}
+
+.cards-faq-card-body {
+  margin-top: var(--spacing-sm);
+}
+
+.cards-faq-card-body p {
+  font-size: 14px;
+  color: #21272a;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Open state - show full content as modal-like expand */
+.cards-faq-card-open .cards-faq-card-plus {
+  transform: rotate(45deg);
+}
+
+/* Desktop: 3 columns grid */
+@media (width >= 900px) {
+  .cards-faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .cards-faq-card-title {
+    font-size: 16px;
+  }
+}
