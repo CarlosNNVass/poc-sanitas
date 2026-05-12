@@ -107,7 +107,7 @@
   border-radius: var(--radius-sm);
   padding: var(--spacing-lg);
   box-shadow: 0 0 16px rgb(0 0 0 / 10%);
-  text-align: left;
+  text-align: center;
 }
 
 .hero-product .hero-form-title {
@@ -119,6 +119,7 @@
 
 .hero-product .hero-form-group {
   margin-bottom: var(--spacing-md);
+  text-align: left;
 }
 
 .hero-product .hero-form-group label {
@@ -147,20 +148,19 @@
 }
 
 .hero-product .hero-form-submit {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 14px;
+  margin: var(--spacing-lg) auto 0;
+  padding: 14px 32px;
   background-color: var(--color-cyan);
   color: var(--color-white);
-  border: none;
+  border: 2px solid transparent;
   border-radius: var(--radius-sm);
   font-weight: 700;
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   text-decoration: none;
   cursor: pointer;
-  margin-top: var(--spacing-lg);
   transition: background-color var(--transition-base);
 }
 
