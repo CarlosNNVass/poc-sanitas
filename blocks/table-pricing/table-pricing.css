@@ -57,6 +57,11 @@
 
 .table-pricing.block table tbody tr {
   border-bottom: none;
+  border-top: 1px solid #ebeef2;
+}
+
+.table-pricing.block table tbody tr:first-child {
+  border-top: none;
 }
 
 .table-pricing.block table td {
