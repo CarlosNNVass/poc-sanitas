@@ -120,6 +120,21 @@
   font-size: 16px;
   color: var(--color-cyan);
   transition: background-color var(--transition-base);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.accordion-coverage-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  color: var(--color-navy);
+}
+
+.accordion-coverage-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 .accordion-coverage details[open] summary {
@@ -154,20 +169,35 @@
   border-color: #0652ae;
 }
 
+.accordion-coverage details summary p {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .accordion-coverage details .accordion-coverage-item-body {
-  padding: 0 16px 16px;
+  padding: 0 16px 16px 56px;
 }
 
 .accordion-coverage details .accordion-coverage-item-body p {
   margin-top: 0;
-  color: var(--text-color-muted);
+  color: #4e5357;
+  font-size: 16px;
 }
 
 .accordion-coverage details .accordion-coverage-item-body ul {
   padding-left: 20px;
-  color: var(--text-color-muted);
+  color: #4e5357;
+  margin: 0;
 }
 
 .accordion-coverage details .accordion-coverage-item-body li {
   margin-bottom: var(--spacing-sm);
+  font-size: 16px;
+  color: #4e5357;
+}
+
+.accordion-coverage details .accordion-coverage-item-body li p {
+  color: #4e5357;
 }
