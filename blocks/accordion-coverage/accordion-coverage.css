@@ -26,8 +26,8 @@
 
 @media (width >= 900px) {
   .accordion-coverage-container .default-content-wrapper h2 {
-    font-size: 31px;
-    line-height: 44px;
+    font-size: var(--heading-font-size-xxl);
+    line-height: 1.15;
   }
 }
 

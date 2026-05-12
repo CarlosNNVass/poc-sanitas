@@ -27,8 +27,8 @@
 
 @media (width >= 900px) {
   .cards-service-container .default-content-wrapper h2 {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: var(--heading-font-size-xl);
+    line-height: 1.18;
   }
 
   .cards-service-container .default-content-wrapper p {
