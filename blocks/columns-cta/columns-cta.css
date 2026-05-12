@@ -113,6 +113,18 @@
   color: var(--text-color-muted);
 }
 
+.columns-cta.contact .contact-item > p:first-child {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.columns-cta.contact .contact-item > p:first-child img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
 .columns-cta.contact .icon {
   width: 64px;
   height: 64px;
