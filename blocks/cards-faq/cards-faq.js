@@ -1,6 +1,6 @@
 const MODAL_CONTENT = {
   Copago: `<p>Copago es un pequeño importe que abona el cliente al hacer uso de determinados servicios y que nos permite ofrecer una prima más baja. Si vas a usar tu seguro con poca frecuencia, un producto con copagos puede ser una buena forma de ahorrar en tu prima.</p>
-<p>Como ofrecemos productos que pueden contratarse <a href="/seguros/seguros-de-salud-con-copago">con copago</a> y <a href="/seguros/seguros-de-salud-sin-copago">sin copago</a> (con una cobertura idéntica en ambos casos), podrás elegir la modalidad que más se ajusta a tus necesidades. Puedes consultar el detalle de copagos en la ficha de cada producto. Estos copagos se facturan de manera mensual.</p>`,
+<p>Como ofrecemos productos que pueden contratarse <a href="/seguros/seguros-de-salud-con-copago">con copago</a> y <a href="/seguros/seguros-de-salud-sin-copago">sin copago</a> (con una cobertura idéntica en ambos casos), podrás elegir la modalidad que más se ajusta a tus necesidades. Puedes consultar el detalle de copagos en la ficha de cada producto. Estos copagos se facturan de manera mensual.</p>`,
 
   Videoconsulta: `<p>Servicio que te permite hablar con tu médico estés donde estés. Gran ahorro de tiempo y muy útil para revisión de resultados, prescripción de pruebas o recetas, urgencias…</p>
 <p><strong>Ventajas de la videoconsulta</strong></p>
@@ -32,9 +32,9 @@ const MODAL_CONTENT = {
   Preexistencias: `<p>Se denomina preexistencias a las patologías del cliente existentes con anterioridad a la fecha de la contratación del producto.</p>
 <p>Si deseas contratar una póliza y padeces o has padecido alguna enfermedad o lesión, una operación o algún síntoma, el departamento médico te llamará para valorarlo.</p>`,
 
-  'Clínicas concertadas': `<p>La red médica más completa con más de 4.500 centros asistenciales de referencia concertados a nivel nacional.</p>`,
+  'Clínicas concertadas': '<p>La red médica más completa con más de 4.500 centros asistenciales de referencia concertados a nivel nacional.</p>',
 
-  'Precio final': `<p>Al precio de la póliza no es necesario añadirle IVA ni ningún otro impuesto, salvo el Recargo de Compensación de Seguros, que se abona únicamente en el primer recibo y supone un 0,15% de la cuota neta anual.</p>`,
+  'Precio final': '<p>Al precio de la póliza no es necesario añadirle IVA ni ningún otro impuesto, salvo el Recargo de Compensación de Seguros, que se abona únicamente en el primer recibo y supone un 0,15% de la cuota neta anual.</p>',
 };
 
 export default function decorate(block) {
