@@ -68,15 +68,6 @@
   padding: 16px;
 }
 
-.table-pricing.block table td strong {
-  font-weight: 800;
-  color: #21272a;
-}
-
-.table-pricing.block table td p {
-  color: #21272a;
-}
-
 /* stylelint-disable-next-line no-descending-specificity */
 .table-pricing.block table tfoot td {
   font-size: 11px;
@@ -87,9 +78,16 @@
 }
 
 /* stylelint-disable no-descending-specificity */
+.table-pricing table th strong,
+.table-pricing table td strong {
+  font-weight: 800;
+  color: #21272a;
+}
+
 .table-pricing table th p,
 .table-pricing table td p {
   margin: 0;
+  color: #21272a;
 }
 
 .table-pricing table td p + p {
