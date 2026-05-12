@@ -48,9 +48,105 @@
   margin: 0;
 }
 
-/* Open state - show full content as modal-like expand */
-.cards-faq-card-open .cards-faq-card-plus {
-  transform: rotate(45deg);
+/* Modal overlay */
+.cards-faq-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(30 30 30 / 90%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cards-faq-modal-overlay.cards-faq-modal-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal dialog */
+.cards-faq-modal {
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 90vw;
+  max-width: 780px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 44px;
+}
+
+.cards-faq-modal-body p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4e5357;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+.cards-faq-modal-body p:last-child {
+  margin-bottom: 0;
+}
+
+.cards-faq-modal-body a {
+  color: var(--color-cyan);
+  text-decoration: none;
+}
+
+.cards-faq-modal-body a:hover {
+  text-decoration: underline;
+}
+
+.cards-faq-modal-body ul {
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+
+.cards-faq-modal-body li {
+  font-size: 14px;
+  color: #4e5357;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/* Close button */
+.cards-faq-modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cards-faq-modal-close::before,
+.cards-faq-modal-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+}
+
+.cards-faq-modal-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cards-faq-modal-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.cards-faq-modal-close:hover::before,
+.cards-faq-modal-close:hover::after {
+  background-color: #4e5357;
 }
 
 /* Desktop: 3 columns grid */

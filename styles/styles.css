@@ -318,6 +318,15 @@ main .section.warm-gray {
   padding: var(--spacing-xxl) 0;
 }
 
+main .section.warm-gray > .default-content-wrapper {
+  text-align: center;
+}
+
+main .section.warm-gray > .default-content-wrapper h2 strong {
+  font-weight: 900;
+  color: #0652ae;
+}
+
 main .section.light-blue {
   background-color: var(--color-light-blue);
   padding: var(--spacing-xxl) 0;

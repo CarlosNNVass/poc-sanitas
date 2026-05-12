@@ -5,15 +5,16 @@
 
 /* Accordion FAQ block - questions style */
 .accordion-faq {
-  background-color: transparent;
-  border-radius: 0;
+  background-color: #fff;
+  border-radius: 8px;
   box-shadow: none;
   overflow: visible;
+  padding: 8px 16px;
 }
 
 .accordion-faq details {
   border: none;
-  border-bottom: 1px solid #e0ddd9;
+  border-bottom: 1px solid #dde1e6;
 }
 
 .accordion-faq details + details {
@@ -26,17 +27,24 @@
 
 .accordion-faq details summary {
   position: relative;
-  padding: 18px 48px 18px 0;
+  padding: 12px 48px 12px 8px;
   cursor: pointer;
   list-style: none;
-  font-weight: 700;
-  font-size: 14px;
-  color: var(--color-cyan);
+  font-weight: 600;
+  font-size: 16px;
+  color: #0652ae;
   transition: color var(--transition-base);
 }
 
+.accordion-faq details summary p {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .accordion-faq details[open] summary {
-  color: var(--color-navy);
+  color: #0652ae;
 }
 
 .accordion-faq details summary:hover {
@@ -55,7 +63,7 @@
   transform: translateY(-70%) rotate(45deg);
   width: 8px;
   height: 8px;
-  border: 2px solid var(--color-cyan);
+  border: 2px solid #0652ae;
   border-width: 0 2px 2px 0;
   transition: transform var(--transition-base);
 }
@@ -65,19 +73,12 @@
 }
 
 .accordion-faq details .accordion-faq-item-body {
-  padding: 0 0 18px;
+  padding: 0 8px 16px;
 }
 
 .accordion-faq details .accordion-faq-item-body p {
   margin-top: 0;
-  color: #4e5357;
+  color: #21272a;
   font-size: 14px;
   line-height: 1.5;
-}
-
-@media (width >= 900px) {
-  .accordion-faq details summary {
-    font-size: 16px;
-    padding: 20px 48px 20px 0;
-  }
 }
