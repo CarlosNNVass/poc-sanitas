@@ -367,6 +367,7 @@ main .section.dark h6 {
   color: var(--color-white);
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 main .section.dark p {
   color: rgb(255 255 255 / 85%);
 }

@@ -102,6 +102,7 @@
   width: calc(50% - var(--spacing-lg));
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .columns-cta.contact .contact-item p {
   margin: 0;
   font-size: var(--body-font-size-xs);
@@ -132,6 +133,7 @@
   overflow: hidden;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .columns-cta.contact .icon img {
   width: 64px;
   height: 64px;

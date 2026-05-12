@@ -103,12 +103,12 @@
   border-bottom: 1px solid #dde1e6;
 }
 
-.accordion-coverage details:last-child {
-  border-bottom: none;
-}
-
 .accordion-coverage details + details {
   margin-top: 0;
+}
+
+.accordion-coverage details:last-child {
+  border-bottom: none;
 }
 
 .accordion-coverage details summary {
@@ -169,6 +169,7 @@
   border-color: #0652ae;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .accordion-coverage details summary p {
   margin: 0;
   color: inherit;
