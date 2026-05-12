@@ -1,13 +1,19 @@
+/* Spacing between cards-faq and accordion-faq */
+.accordion-faq-container .cards-faq-wrapper {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Accordion FAQ block - questions style */
 .accordion-faq {
-  background-color: var(--color-white);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-card);
-  overflow: hidden;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
 }
 
 .accordion-faq details {
   border: none;
-  border-bottom: 1px solid #e8e5e1;
+  border-bottom: 1px solid #e0ddd9;
 }
 
 .accordion-faq details + details {
@@ -20,21 +26,21 @@
 
 .accordion-faq details summary {
   position: relative;
-  padding: 18px 48px 18px 20px;
+  padding: 18px 48px 18px 0;
   cursor: pointer;
   list-style: none;
   font-weight: 700;
-  font-size: var(--body-font-size-m);
-  color: var(--color-navy);
-  transition: background-color var(--transition-base);
+  font-size: 14px;
+  color: var(--color-cyan);
+  transition: color var(--transition-base);
 }
 
 .accordion-faq details[open] summary {
-  background-color: transparent;
+  color: var(--color-navy);
 }
 
 .accordion-faq details summary:hover {
-  background-color: rgb(0 0 0 / 2%);
+  color: var(--link-hover-color);
 }
 
 .accordion-faq details summary::-webkit-details-marker {
@@ -45,25 +51,33 @@
   content: '';
   position: absolute;
   top: 50%;
-  right: 20px;
-  transform: translateY(-50%) rotate(135deg);
+  right: 8px;
+  transform: translateY(-70%) rotate(45deg);
   width: 8px;
   height: 8px;
-  border: 2px solid var(--color-navy);
-  border-width: 2px 2px 0 0;
+  border: 2px solid var(--color-cyan);
+  border-width: 0 2px 2px 0;
   transition: transform var(--transition-base);
 }
 
 .accordion-faq details[open] summary::after {
-  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-30%) rotate(-135deg);
 }
 
 .accordion-faq details .accordion-faq-item-body {
-  padding: 0 20px 18px;
+  padding: 0 0 18px;
 }
 
 .accordion-faq details .accordion-faq-item-body p {
   margin-top: 0;
-  color: var(--text-color-muted);
-  line-height: 1.6;
+  color: #4e5357;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (width >= 900px) {
+  .accordion-faq details summary {
+    font-size: 16px;
+    padding: 20px 48px 20px 0;
+  }
 }
