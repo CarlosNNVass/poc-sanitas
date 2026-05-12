@@ -1,3 +1,11 @@
+function isIconParagraph(p) {
+  if (p.querySelector('.icon')) return true;
+  const children = [...p.children];
+  if (children.length === 1 && children[0].tagName === 'PICTURE') return true;
+  if (children.length === 1 && children[0].tagName === 'SPAN' && children[0].querySelector('img')) return true;
+  return false;
+}
+
 export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-cta-${cols.length}-cols`);
@@ -10,7 +18,7 @@ export default function decorate(block) {
       let current = null;
 
       paragraphs.forEach((p) => {
-        if (p.querySelector('.icon')) {
+        if (isIconParagraph(p)) {
           if (current) items.push(current);
           current = document.createElement('div');
           current.className = 'contact-item';
@@ -21,8 +29,10 @@ export default function decorate(block) {
       });
       if (current) items.push(current);
 
-      firstCol.innerHTML = '';
-      items.forEach((item) => firstCol.append(item));
+      if (items.length > 0) {
+        firstCol.innerHTML = '';
+        items.forEach((item) => firstCol.append(item));
+      }
     }
   }
 }
