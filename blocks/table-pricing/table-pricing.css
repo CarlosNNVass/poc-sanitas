@@ -1,66 +1,92 @@
+/* Section heading */
+.table-pricing-container .default-content-wrapper h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-navy);
+  text-align: center;
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+.table-pricing-container .default-content-wrapper h2 strong {
+  color: #0652ae;
+}
+
+.table-pricing-container .default-content-wrapper p {
+  font-size: 14px;
+  color: #21272a;
+  text-align: left;
+}
+
+@media (width >= 900px) {
+  .table-pricing-container .default-content-wrapper h2 {
+    font-size: 31px;
+  }
+}
+
+/* Table block */
 .table-pricing.block {
   width: 100%;
   overflow-x: auto;
   background-color: var(--color-white);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-card);
-  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+  padding: 0;
+  margin-bottom: var(--spacing-md);
 }
 
 .table-pricing.block table {
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
-  font-size: var(--body-font-size-s);
-}
-
-@media (width >= 900px) {
-  .table-pricing.block table {
-    font-size: var(--body-font-size-m);
-  }
+  font-size: 14px;
 }
 
 .table-pricing.block table thead tr {
   border-top: none;
-  border-bottom: 2px solid var(--color-cyan);
+  border-bottom: 1px solid #dde1e6;
 }
 
 .table-pricing.block table thead th {
   font-weight: 700;
+  font-size: 18px;
   color: var(--color-navy);
   text-align: left;
   padding: var(--spacing-md);
 }
 
 .table-pricing.block table tbody tr {
-  border-bottom: 1px solid #e8e5e1;
-}
-
-.table-pricing.block table tbody tr:last-child {
   border-bottom: none;
 }
 
 .table-pricing.block table td {
-  padding: 12px var(--spacing-md);
-  color: var(--text-color-muted);
+  padding: 16px 16px 16px 0;
+  color: #21272a;
   text-align: left;
+  font-size: 14px;
+}
+
+.table-pricing.block table td:first-child {
+  padding-left: var(--spacing-md);
 }
 
 .table-pricing.block table td:last-child {
   text-align: right;
-  font-weight: 700;
-  color: var(--color-navy);
-  white-space: nowrap;
+  padding-right: var(--spacing-md);
+  font-weight: 400;
+  color: #21272a;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
 .table-pricing.block table tfoot td {
-  font-size: var(--body-font-size-xs);
-  color: var(--text-color-muted);
-  padding-top: var(--spacing-md);
-  border-top: 1px solid #e8e5e1;
+  font-size: 11px;
+  color: #21272a;
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-md);
+  padding-left: var(--spacing-md);
 }
 
+/* stylelint-disable no-descending-specificity */
 .table-pricing table th p,
 .table-pricing table td p {
   margin: 0;
@@ -68,4 +94,57 @@
 
 .table-pricing table td p + p {
   margin-top: 0.25em;
+}
+/* stylelint-enable no-descending-specificity */
+
+/* Download link in section */
+.table-pricing-container > div > .default-content-wrapper a {
+  color: var(--color-cyan);
+  font-size: 14px;
+}
+
+/* Columns CTA inside this section */
+.table-pricing-container .columns-cta-wrapper .columns-cta > div > div {
+  padding: var(--spacing-lg);
+}
+
+.table-pricing-container .columns-cta-wrapper .columns-cta > div > div h3 {
+  font-size: 21px;
+  color: var(--color-navy);
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.table-pricing-container .columns-cta-wrapper .columns-cta > div > div p {
+  font-size: 14px;
+  color: #4e5357;
+}
+
+/* Secondary button (outline) in CTA */
+.table-pricing-container .columns-cta-wrapper .columns-cta > div > div a:any-link {
+  border: 2px solid var(--color-cyan);
+  background-color: var(--color-white);
+  color: var(--color-cyan);
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  padding: 10px 20px;
+}
+
+.table-pricing-container .columns-cta-wrapper .columns-cta > div > div a:hover {
+  background-color: var(--color-cyan);
+  color: var(--color-white);
+}
+
+/* Primary CTA button (last column - red in original) */
+/* stylelint-disable-next-line no-descending-specificity */
+.table-pricing-container .columns-cta-wrapper .columns-cta > div > div:last-child a:any-link {
+  background-color: var(--color-red-cta);
+  border-color: var(--color-red-cta);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+}
+
+.table-pricing-container .columns-cta-wrapper .columns-cta > div > div:last-child a:hover {
+  background-color: #b52e06;
+  border-color: #b52e06;
 }
