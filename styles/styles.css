@@ -320,7 +320,7 @@ main .section > .default-content-wrapper h2 strong {
   color: #0652ae;
 }
 
-main .section > .default-content-wrapper:has(h2) > p {
+main .section > .default-content-wrapper > h2 + p {
   font-size: 18px;
   color: #21272a;
   line-height: 1.3;
