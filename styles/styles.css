@@ -308,6 +308,7 @@ main > .section:first-of-type {
 /* section header: center only wrappers that contain an h2 */
 main .section > .default-content-wrapper:has(h2) {
   text-align: center;
+  margin-bottom: 32px;
 }
 
 main .section > .default-content-wrapper h2 {
