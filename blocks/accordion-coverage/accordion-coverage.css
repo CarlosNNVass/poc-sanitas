@@ -1,3 +1,36 @@
+/* Section heading and intro paragraph above the accordion */
+.accordion-coverage-container .default-content-wrapper h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.accordion-coverage-container .default-content-wrapper h2 strong {
+  color: #0652ae;
+}
+
+.accordion-coverage-container .default-content-wrapper p {
+  font-size: 18px;
+  color: #21272a;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.accordion-coverage-container .default-content-wrapper p strong {
+  font-weight: 800;
+  color: #21272a;
+}
+
+@media (width >= 900px) {
+  .accordion-coverage-container .default-content-wrapper h2 {
+    font-size: 31px;
+    line-height: 44px;
+  }
+}
+
 .accordion-coverage details {
   border: none;
   border-bottom: 1px solid #e0ddd9;
