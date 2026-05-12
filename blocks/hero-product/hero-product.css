@@ -98,42 +98,70 @@
   text-decoration: none;
 }
 
-/* Right column - CTA form card */
+/* Right column - Form card */
 .hero-product > div:last-child > div:last-child {
   background-color: var(--color-white);
   border-radius: var(--radius-sm);
   padding: var(--spacing-lg);
   box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+  text-align: left;
+}
+
+.hero-product .hero-form-title {
+  color: var(--color-navy);
+  margin: 0 0 var(--spacing-md);
+  font-size: var(--heading-font-size-m);
   text-align: center;
 }
 
-.hero-product > div:last-child > div:last-child h3 {
-  color: var(--color-navy);
-  margin-top: 0;
-  font-size: var(--heading-font-size-m);
+.hero-product .hero-form-group {
+  margin-bottom: var(--spacing-md);
 }
 
-.hero-product > div:last-child > div:last-child p {
+.hero-product .hero-form-group label {
+  display: block;
+  font-size: var(--body-font-size-xs);
   color: var(--text-color-muted);
-  max-width: unset;
-  font-size: var(--body-font-size-s);
+  margin-bottom: var(--spacing-xs);
 }
 
-.hero-product > div:last-child > div:last-child a:any-link {
+.hero-product .hero-form-group select,
+.hero-product .hero-form-group input {
+  width: 100%;
+  padding: 12px var(--spacing-md);
+  border: 1px solid #c9c5c0;
+  border-radius: var(--radius-sm);
+  font-size: var(--body-font-size-m);
+  color: var(--color-navy);
+  background-color: var(--color-white);
+  appearance: auto;
+}
+
+.hero-product .hero-form-group select:focus,
+.hero-product .hero-form-group input:focus {
+  border-color: var(--color-cyan);
+  outline: none;
+}
+
+.hero-product .hero-form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px;
   background-color: var(--color-cyan);
   color: var(--color-white);
-  padding: 12px 24px;
+  border: none;
   border-radius: var(--radius-sm);
   font-weight: 700;
-  font-size: var(--body-font-size-s);
+  font-size: var(--body-font-size-m);
   text-decoration: none;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  margin: 0;
+  cursor: pointer;
+  margin-top: var(--spacing-lg);
+  transition: background-color var(--transition-base);
 }
 
-.hero-product > div:last-child > div:last-child a:hover {
+.hero-product .hero-form-submit:hover {
   background-color: var(--link-hover-color);
   text-decoration: none;
 }
