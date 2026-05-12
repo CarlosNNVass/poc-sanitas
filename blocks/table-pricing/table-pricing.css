@@ -82,6 +82,20 @@
   color: #21272a;
 }
 
+.table-pricing.block table td:only-child {
+  text-align: left;
+  padding: 16px;
+}
+
+.table-pricing.block table td strong {
+  font-weight: 800;
+  color: #21272a;
+}
+
+.table-pricing.block table td p {
+  color: #21272a;
+}
+
 /* stylelint-disable-next-line no-descending-specificity */
 .table-pricing.block table tfoot td {
   font-size: 11px;
