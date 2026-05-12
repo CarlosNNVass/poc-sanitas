@@ -42,11 +42,6 @@
   text-decoration: none;
 }
 
-/* Section header: centered title + subtitle */
-.columns-cta-container > .default-content-wrapper {
-  text-align: center;
-}
-
 /* Contact variant: 75/25 layout with icon grid */
 .columns-cta.contact > div > div:first-child {
   flex: 3;
